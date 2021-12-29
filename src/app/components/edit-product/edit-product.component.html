@@ -1,0 +1,34 @@
+<div class="container mt-3">
+  <div class="col-sm-8 col-sm-offset-2">
+    <form (ngSubmit)="onUpdate()" [formGroup]="editProductFormGroup">
+      <div class="form-group">
+        <label for="name" hidden>Id </label>
+        <input type="text" class="form-control" id="id" formControlName="id" hidden>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+      </div>
+      <div class="form-group">
+        <label for="price"> Price </label>
+        <input type="text" class="form-control" id="price"  formControlName="price">
+      </div>
+      <div class="form-group">
+        <label for="quantity"> Quantiy</label>
+        <input type="text" class="form-control" id="quantity"  formControlName="quantity">
+      </div>
+      <div class="form-group">
+        <label for="isSelected">Will this product be selected?</label>
+        <input type="checkbox" class="form-check" id="isSelected"  formControlName="isSelected">
+      </div>
+
+      <div class="form-group">
+        <label for="isAvailable">Is this product available?</label>
+        <input type="checkbox" class="form-check" id="isAvailable"  formControlName="isAvailable">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
