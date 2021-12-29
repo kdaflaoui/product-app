@@ -1,0 +1,29 @@
+<tr >
+  <td>{{ product.id }}</td>
+  <td>{{ product.name }}</td>
+  <td>{{ product.price }}</td>
+  <td>{{ product.quantity }}</td>
+  <td>{{ product.isSelected }}</td>
+  <td>{{ product.isAvailable }}</td>
+
+  <!--          <td>-->
+  <!--            <button (click)="onSelected(product)" type="button" [ngClass]="product.isSelected ? 'btn btn-success' : 'btn btn-danger'"  >-->
+  <!--              <span *ngIf="product.isSelected"> Selected</span>-->
+  <!--              <span *ngIf="!product.isSelected">Unselected</span>-->
+  <!--            </button>-->
+  <!--          </td>-->
+  <td>
+    <input (click)="onSelected(product)"  type="checkbox" class="form-check-input position-static mt-2" [checked]="product.isSelected">
+  </td>
+
+  <td>
+    <button (click)="onUpdateProduct(product)" type="button" class="btn btn-success">
+      <span class="fa fa-edit"></span>
+    </button>
+  </td>
+  <td>
+    <button (click)="onDelete(product)" type="button" class="btn btn-danger">
+      <span class="fa fa-trash-o"></span>
+    </button>
+  </td>
+</tr>
