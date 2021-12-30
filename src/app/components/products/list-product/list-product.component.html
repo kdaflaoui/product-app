@@ -23,7 +23,6 @@
         <th>Delete</th>
       </tr>
       <app-item-product
-        (eventEmitter)="onActionEvent($event)"
         [product]="product"
         *ngFor="let product of result.data"
         style="display: contents"
