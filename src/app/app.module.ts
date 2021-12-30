@@ -12,7 +12,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AddProductComponent } from './components/add-product/add-product.component';
 import { EditProductComponent } from './components/edit-product/edit-product.component';
 import { HeaderProductComponent } from './components/products/header-product/header-product.component';
-import { ItemProductComponent } from './components/products/item-product/item-product.component';
+import { ItemProductComponent } from './components/products/list-product/item-product/item-product.component';
 import { ListProductComponent } from './components/products/list-product/list-product.component';
 
 const appRoutes : Routes = [

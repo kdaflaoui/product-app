@@ -14,8 +14,6 @@ export class ListProductComponent implements OnInit {
   @Output() listProductEventEmitter : EventEmitter<ActionEvent> = new EventEmitter<ActionEvent>();
   readonly dataStateEnum = DataStateEnum;
 
-
-
   constructor() { }
 
   ngOnInit(): void {
