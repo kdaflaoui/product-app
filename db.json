@@ -5,7 +5,7 @@
       "name": "Television",
       "price": 900,
       "quantity": 10,
-      "isSelected": false,
+      "isSelected": true,
       "isAvailable": true
     },
     {
@@ -28,9 +28,17 @@
       "name": "Nespresso machine",
       "price": "500",
       "quantity": "10",
-      "isSelected": true,
+      "isSelected": false,
       "isAvailable": true,
       "id": 7
+    },
+    {
+      "name": "Samsung",
+      "price": "1200",
+      "quantity": "10",
+      "isSelected": true,
+      "isAvailable": true,
+      "id": 8
     }
   ]
 }
