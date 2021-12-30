@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Observable} from "rxjs";
 import {ActionEvent, AppDataState, DataStateEnum, ProductActionType} from "../../../states/app-data.state";
 import {Product} from "../../model/product.model";
+import {EventDriverService} from "../../../services/event_driver.service";
 
 @Component({
   selector: 'app-list-product',
@@ -14,12 +15,12 @@ export class ListProductComponent implements OnInit {
   @Output() listProductEventEmitter : EventEmitter<ActionEvent> = new EventEmitter<ActionEvent>();
   readonly dataStateEnum = DataStateEnum;
 
-  constructor() { }
+  constructor(private eventDriverService: EventDriverService) { }
 
   ngOnInit(): void {
   }
 
   onActionEvent($event: ActionEvent) {
-    this.listProductEventEmitter.emit($event);
+    this.eventDriverService.publishEvent($event);
   }
 }
